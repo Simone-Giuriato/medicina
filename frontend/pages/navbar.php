@@ -31,7 +31,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="visualizzaPiano.php">Mostra Attivitá formative</a></li>
-            <li><a class="dropdown-item" href="visualizzaPiano.php">Modifica Attivitá formative</a></li>
+            <li><a class="dropdown-item" href="addPiano.php">Modifica Attivitá formative</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
