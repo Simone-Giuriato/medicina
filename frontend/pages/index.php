@@ -24,7 +24,7 @@ if(empty($_SESSION['user_id'])){
         <div class="container mt-5">
             <div class="row">
                 <?php
-                include_once dirname(__FILE__) . '/../function/login.php';
+                include_once dirname(__FILE__) . '/../function/user.php';
 
                 $response = getUser(); 
                 

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -8,37 +9,44 @@
         <link rel="stylesheet" href="assets/style.css">
         <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
     </head>
-    
+
+
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="index.php">
-            <img src="../assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
-            Università
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <?php
-                                            include_once dirname(__FILE__) . '/../function/login.php';
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ricerca di medicina</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="ciao.php">Homepage</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Attivitá formative
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mostra Attivitá formative</a></li>
+            <li><a class="dropdown-item" href="#">Modifica Attivitá formative</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Unitá didattiche
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mostra Unitá didattiche</a></li>
+            <li><a class="dropdown-item" href="#">Modifica Unitá didattiche</a></li>
+          </ul>
+        </li>
+        <?php
+                                            include_once dirname(__FILE__) . '/../function/user.php';
                                             $user = $_SESSION['user_id'];
                                             $privilage = getAutentication($user);
                                             if($privilage == "admin"){
-                                                echo('   Piano di studi
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="visualizzaPiano.php">Vedi piani di studio</a></li>
-                                                    <li><a class="dropdown-item" href="aggiungiPiano.php">Modifica piani di studio</a></li>
-                                                </ul>
-                                            </li>
+                                                echo('   
                                             <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -50,19 +58,15 @@
                     </ul>
                 </li>');
                                             }
-                                            else{
-                                                echo('   Piano di studi
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="visualizzaPiano.php">Vedi piani di studio</a></li>
-                                                </ul>
-                                            </li>');
-                                            }
+                                            
+                                            
                         ?>
-            </ul>
-            <a href="../function/logout.php">
-            <button class="btn btn-outline-danger">Esci</button>
-            </a>
-        </div>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
+  </div>
 </nav>
+</html>
