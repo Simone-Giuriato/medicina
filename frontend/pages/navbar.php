@@ -30,8 +30,8 @@
           Attivitá formative
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Mostra Attivitá formative</a></li>
-            <li><a class="dropdown-item" href="#">Modifica Attivitá formative</a></li>
+            <li><a class="dropdown-item" href="showtables.php">Mostra Attivitá formative</a></li>
+            <li><a class="dropdown-item" href="showtables.php">Modifica Attivitá formative</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
