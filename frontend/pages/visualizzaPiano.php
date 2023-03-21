@@ -24,7 +24,7 @@ if(empty($_SESSION['user_id'])){
     <div class="row mt-5">
    <h2> Piani di studio:</h2>
     <br><br>
-    <table class="table table-dark table-striped">
+    <table class="table  table-striped">
                     <thead>
                         <tr>
                         <th scope="col">Codice</th>
