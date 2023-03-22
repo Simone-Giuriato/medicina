@@ -32,17 +32,18 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="visualizzaPiano.php">Mostra Attivitá formative</a></li>
             <li><a class="dropdown-item" href="addPiano.php">Modifica Attivitá formative</a></li>
+            <li><a class="dropdown-item" href="deletePiano.php">Elimina Attivitá formative</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Unitá didattiche
           </a>
-          <ul class="dropdown-menu">
+         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Mostra Unitá didattiche</a></li>
             <li><a class="dropdown-item" href="#">Modifica Unitá didattiche</a></li>
           </ul>
-        </li>
+        </li>-->
         <?php
                                             include_once dirname(__FILE__) . '/../function/user.php';
                                             $user = $_SESSION['user_id'];

@@ -23,7 +23,7 @@ if(empty($_SESSION['user_id'])){
         <div class="container mt-5">
             <div class="row">
                 <?php
-                include_once dirname(__FILE__) . '/../function/user.php';
+                /*include_once dirname(__FILE__) . '/../function/user.php';
 
                 $response = getUser(); 
                 
@@ -34,7 +34,7 @@ if(empty($_SESSION['user_id'])){
                     '); 
                 }else{
                     echo('<p class="text-danger"><b>Errore</b></p>'); 
-                }
+                }*/
                 ?>
   </div>      
 </div>      

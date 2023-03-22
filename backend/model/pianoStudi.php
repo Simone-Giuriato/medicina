@@ -41,6 +41,19 @@ class Piano
             
             return $this->conn->affected_rows;
     }
+
+        function deletePiano($codice){
+        $query = "DELETE FROM piano_di_studi
+        WHERE codice = ?";
+    
+        $stmt = $this->conn->prepare($query);
+    
+        $stmt->bind_param('s', $codice);
+            $stmt->execute();
+            
+           // return $this->conn->affected_rows;
+            return $stmt->execute();
+    }
 }
 
 
