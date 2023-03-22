@@ -30,9 +30,9 @@
           Attivitá formative
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="visualizzaPiano.php">Mostra Attivitá formative</a></li>
-            <li><a class="dropdown-item" href="addPiano.php">Modifica Attivitá formative</a></li>
-            <li><a class="dropdown-item" href="deletePiano.php">Elimina Attivitá formative</a></li>
+            <li><a class="dropdown-item" href="visualizzaPiano.php">Mostra Piano di Studio</a></li>
+            <li><a class="dropdown-item" href="addPiano.php">Aggiungi Piano di Studio</a></li>
+            <li><a class="dropdown-item" href="deletePiano.php">Elimina Piano Studio</a></li>
           </ul>
         </li>
         <!--<li class="nav-item dropdown">
@@ -56,7 +56,7 @@
                         Utenti
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="addUtenti.php">Aggiungi Utenti</a></li>
+                    
                         <li><a class="dropdown-item" href="visualizzaUtenti.php">Visualizza Utenti</a></li>
                     </ul>
                 </li>');
