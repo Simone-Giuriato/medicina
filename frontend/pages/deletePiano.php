@@ -38,11 +38,11 @@ if(empty($_SESSION['user_id'])){
             <th scope="row"></th>
             <form method="post">
               <td>
-                <input class="form-control" type="" id="codice" placeholder="codice" name="codice"
+                <input class="form-control" type="" id="codice" placeholder="codice..." name="codice"
                   maxlength="50" required>
               </td>
               <td>
-                <button type="submit" class="btn btn-success" name="legha">Conferma</button>
+                <button type="submit" class="btn btn-outline-success" name="legha">Conferma</button>
 </td>
 </tr>
             <?php

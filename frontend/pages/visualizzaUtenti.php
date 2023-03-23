@@ -17,14 +17,14 @@ if(empty($_SESSION['user_id'])){
         <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
     </head>
 
-    <body>
+    <body style="background-color:	#f5f5dc">
   <?php require_once(__DIR__.'\navbar.php'); ?>
 
   <div class="container">
     <div class="row mt-5">
    <h2> Utenti:</h2>
     <br><br>
-    <table class="table table-striped">
+    <table class="table table-bordered border-primary">
                     <thead>
                         <tr>
                         <th scope="col">Nome</th>
@@ -49,7 +49,7 @@ if(empty($_SESSION['user_id'])){
            echo('</ul>
            </div>
            <br>');
-           echo('<a href="index.php" class="btn btn-primary ms-auto p-2">torna a home</a>');
+           echo('<a href="index.php" class="btn btn-outline-primary ms-auto p-2">torna a home</a>');
     }
 ?>
     </div>

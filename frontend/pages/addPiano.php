@@ -22,37 +22,23 @@ if(empty($_SESSION['user_id'])){
 
   <div class="container">
     <div class="row mt-5">
-      <h2>Crea nuovo Piano di Studi</h2>
+      <h2>Crea un nuovo Piano di Studi</h2>
     </div>
-    <div class="row mt-5">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"></th>
-            <form method="post">
-              <td>
-                <input class="form-control" type="" id="codice" placeholder="codice" name="codice"
-                  maxlength="50" required>
-              </td>
-              <td>
-                <input class="form-control" type="" id="nome" placeholder="nome" name="nome"
-                  maxlength="50" required>
-              </td>
-              <td>
-                <input class="form-control" type="" id="cfu" placeholder="cfu" name="cfu"
-                  maxlength="50" required>
-              </td>
-              <td>
-                <button type="submit" class="btn btn-success" name="legha">Conferma</button>
-</td>
-</tr>
+        <form method="post" style="margin-top: 20px;">
+            <div class="mb-3">
+                <label for="name" class="form-label"><b>Codice</b></label>
+                <input type="text" class="form-control" placeholder="Codice..." name="codice" required>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label"><b>Nome</b></label>
+                <input type="text" class="form-control" placeholder="Nome..." name="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label"><b>CFU totali</b></label>
+                <input type="text" class="form-control" placeholder="CFU..." name="cfu" required>
+            </div>
+            <button type="submit" class="btn btn-outline-success" name="legha">Conferma</button>
+        </form>
             <?php
 
 include_once dirname(__FILE__) . '\..\function\piano.php';

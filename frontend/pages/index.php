@@ -23,7 +23,7 @@ if(empty($_SESSION['user_id'])){
         <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
     </head>
 
-    <body>
+    <body style="background-color:	#f5f5dc">
     <?php require_once(__DIR__.'\navbar.php'); ?>
         <div class="container mt-5">
             <div class="row">

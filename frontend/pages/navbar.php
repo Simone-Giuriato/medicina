@@ -12,7 +12,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg" >
   <div class="container-fluid">
   <a class="navbar-brand" href="index.php">
       <img src="../assets/img/logo.png" alt="Bootstrap" width="30" height="24">
