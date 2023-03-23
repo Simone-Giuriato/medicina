@@ -1,11 +1,16 @@
 <?php
+// istruzioni per login:
+// email: admin@gmail.com
+// password: admin
 
 session_start(); 
 if(empty($_SESSION['user_id'])){
     header('location: ../login.php'); 
+
 }
 
 ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -23,18 +28,19 @@ if(empty($_SESSION['user_id'])){
         <div class="container mt-5">
             <div class="row">
                 <?php
-                /*include_once dirname(__FILE__) . '/../function/user.php';
+                include_once dirname(__FILE__) . '/../function/user.php';
 
                 $response = getUser(); 
                 
                 if(!empty($response)){
                     echo ('
                     <h3>Ciao, <b>' . $response . '</b>.</h3>
-                    <h3>Benvenuto! </h3>
+                    
+                    <h4>Qui potrai modificare i piani di studio di medicina</h4>
                     '); 
                 }else{
                     echo('<p class="text-danger"><b>Errore</b></p>'); 
-                }*/
+                }
                 ?>
   </div>      
 </div>      

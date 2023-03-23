@@ -27,7 +27,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Attivitá formative
+         Piano di Studio
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="visualizzaPiano.php">Mostra Piano di Studio</a></li>
@@ -35,15 +35,6 @@
             <li><a class="dropdown-item" href="deletePiano.php">Elimina Piano Studio</a></li>
           </ul>
         </li>
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Unitá didattiche
-          </a>
-         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Mostra Unitá didattiche</a></li>
-            <li><a class="dropdown-item" href="#">Modifica Unitá didattiche</a></li>
-          </ul>
-        </li>-->
         <?php
                                             include_once dirname(__FILE__) . '/../function/user.php';
                                             $user = $_SESSION['user_id'];
