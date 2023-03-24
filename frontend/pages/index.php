@@ -36,7 +36,7 @@ if(empty($_SESSION['user_id'])){
                     echo ('
                     <h3>Ciao, <b>' . $response . '</b>.</h3>
                     
-                    <h4>Qui potrai modificare i piani di studio di medicina</h4>
+                    <h4>Qui potrai visualizzare i piani di studio di medicina</h4>
                     '); 
                 }else{
                     echo('<p class="text-danger"><b>Errore</b></p>'); 

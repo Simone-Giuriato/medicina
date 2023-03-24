@@ -23,7 +23,7 @@
     if($piano->deletePiano($data->codice) > 0)
     {
         http_response_code(201);
-        echo json_encode(array("Message"=> "Eliminated"));
+        echo json_encode(array("Message"=> "Eliminato"));
     }
     else
     {

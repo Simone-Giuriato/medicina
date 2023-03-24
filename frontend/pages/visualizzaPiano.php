@@ -11,13 +11,13 @@ if(empty($_SESSION['user_id'])){
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Piano di Studi | Visualizza</title>
+        <title>Piano di Studi |Vedi Piano</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/style.css">
         <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
     </head>
 
-    <body>
+    <body  style="background-color:	#f5f5dc">
   <?php require_once(__DIR__.'\navbar.php'); ?>
 
   <div class="container">
@@ -51,7 +51,7 @@ if(empty($_SESSION['user_id'])){
            foreach ($player_arr as $row) {
                echo ('<tr>');
                foreach ($row as $cell) {
-                     //ogni elemento della riga è finalmente una cella
+                     //ogni elemento della riga corrisponde ad una cella
                    echo ('<td>' . $cell . '</td>');
             }
            }

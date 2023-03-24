@@ -23,7 +23,7 @@
     if($piano->addPiano($data->codice, $data->nome, $data->cfu) > 0)
     {
         http_response_code(201);
-        echo json_encode(array("Message"=> "Created"));
+        echo json_encode(array("Message"=> "Creato"));
     }
     else
     {

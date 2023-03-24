@@ -32,52 +32,6 @@ class User extends BaseController
         return $stmt;
     }
 
-    protected function getUserFromEmail($email)
-    {
-
-        $sql = sprintf(
-            "SELECT id
-            from `user` u
-            where u.email = %s
-            order by u.id desc
-            limit 1; ",
-            $this->conn->real_escape_string($email)
-        );
-
-        $result = $this->conn->query($sql);
-
-        return $result;
-    }
-
-    public function getLastUserIdFromEmail($email)
-    {
-            $sql = sprintf(
-                "SELECT id
-        from `user` u
-        where u.email = '%s'
-        order by u.id desc
-        limit 1 ",
-                $this->conn->real_escape_string($email)
-            );
-    
-            $result = $this->conn->query($sql);
-    
-            $this->SendOutput($result, JSON_OK);
-    }
-
-
-    public function deleteUser($id)
-    {
-        $sql = sprintf(
-            "UPDATE user 
-            SET active = 0 
-            WHERE id = %d",
-            $this->conn->real_escape_string($id)
-        );
-
-        $result = $this->conn->query($sql);
-        return $result;
-    }
     public function login($email, $password)
     {
         $sql = sprintf("SELECT email, password, id
@@ -93,40 +47,7 @@ class User extends BaseController
         return false;
     }
 
-    public function changePassword($email, $password, $newPassword)
-    {
-        if ($this->login($email, $password) == false) {
-            return false;
-        }
-
-        $sql = sprintf(
-            "UPDATE user 
-            SET password = '%s'
-            WHERE email = '%s' AND password = '%s'",
-            $this->conn->real_escape_string($newPassword),
-            $this->conn->real_escape_string($email),
-            $this->conn->real_escape_string($password)
-        );
-
-        $result = $this->conn->query($sql);
-
-        return $result;
-    }
-    public function addUser($name, $surname,$email,  $password)
-    {
-
-        $sql = sprintf(
-            "INSERT INTO user ( name, surname, email,  password)
-        VALUES ('%s', '%s', '%s',  '%s')",
-             $this->conn->real_escape_string($name),
-             $this->conn->real_escape_string($surname),
-            $this->conn->real_escape_string($email),
-            $this->conn->real_escape_string($password)
-        );
-
-        $result = $this->conn->query($sql);
-        return $result;
-    }
+  
     public function getAutentication($id)
     {
         $sql = sprintf(
@@ -140,17 +61,6 @@ class User extends BaseController
 
         $this->SendOutput($result, JSON_OK);
     }
-    public function addPrivileges($user, $name)
-    {
-
-        $sql = sprintf(
-            "INSERT INTO `privileges` ( user, name)
-        VALUES ('%d', '%s')",
-             $this->conn->real_escape_string($user),
-             $this->conn->real_escape_string($name),
-        );
-        $result = $this->conn->query($sql);
-        return $result;
-    }
+   
 }
 ?>

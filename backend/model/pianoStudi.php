@@ -51,7 +51,7 @@ class Piano
         $stmt->bind_param('s', $codice);
             $stmt->execute();
             
-           // return $this->conn->affected_rows;
+          
             return $stmt->execute();
     }
 }

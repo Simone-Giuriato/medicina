@@ -32,8 +32,8 @@ $inputs = "";
 $errors = "";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  if (!empty($_POST['email']) && !empty($_POST['password'])) {//se la variabile mail o password che devono essere inviate non sono vuote all'ora si invia
-    $data = array(       //Immetto i dati all'interno di data
+  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $data = array(       
       "email" => $_POST['email'],
       "password" => $_POST['password'],
     );
@@ -108,13 +108,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     .form-signin input[type="email"] {
         margin-bottom: -1px;
-        /* border-bottom-right-radius: 0; */
-        /* border-bottom-left-radius: 0; */
+       
     }
 
     .form-signin input[type="password"] {
         margin-bottom: 10px;
-        /* border-top-left-radius: 0; */
-        /* border-top-right-radius: 0; */
+        
     }
 </style>
